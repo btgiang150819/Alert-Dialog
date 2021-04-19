@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <EditText
+            android:textColor="@color/black"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="@color/black"
+            android:layout_below="@id/name"
+            android:hint="Sex"
+            android:id="@+id/sex"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="@color/black"
+            android:layout_below="@id/sex"
+            android:hint="Domicile"
+            android:id="@+id/domicile"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:maxLength="2"
+            android:textColor="@color/black"
+            android:layout_below="@id/domicile"
+            android:hint="Age"
+            android:id="@+id/age"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/age"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:textStyle="bold"
+                android:id="@+id/add1"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textStyle="bold"
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
